@@ -1,0 +1,30 @@
+<div>
+    <h6>Unidades Federativas Cadastradas</h6>
+</div>
+<div class="card">
+    <div class="card-body">
+        <table class="table" aria-hidden="true">
+            <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sigla</th>
+                <th scope="col">Data de Registro</th>
+                <th scope="col">Ações</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="state in $ctrl.states">
+                <td>{{state.nome}}</td>
+                <th scope="row">{{state.sigla}}</th>
+                <td>{{state.dataRegistro | date:'dd/MM/yyyy HH:mm:ss'}}</td>
+                <td>
+                    <button class="btn btn-danger" ng-click="$ctrl.remove(state.id)" title="Delete">
+                        <i class="fa fa-trash" aria-hidden="true"></i></button>
+                    <button class="btn btn-primary" ng-click="$ctrl.edit(state)" title="Edit">
+                        <i class="fa fa-pencil-alt" aria-hidden="true"></i></button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

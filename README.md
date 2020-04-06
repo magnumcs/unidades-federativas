@@ -29,6 +29,10 @@ Após instalar todas as dependências rodar o comando:
 
 Para acessar a api localmente alterar o arquivo config.js e apontar para `http://localhost:8080`
 
+Após todos os procedimentos serem executados com sucesso, acessar a seguinte url:
+
+`http://localhost:3000`
+
 ## Instruções de uso back-end
 
 Para executar o projeto é necessário seguir os requisitos:

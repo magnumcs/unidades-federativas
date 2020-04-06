@@ -20,7 +20,7 @@ public class SwaggerConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.portifoliio.unidadesfederativas"))
+                .apis(RequestHandlerSelectors.basePackage("com.portifolio.unidadesfederativas"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(apiInfo());

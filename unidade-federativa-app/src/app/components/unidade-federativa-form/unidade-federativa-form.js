@@ -22,9 +22,5 @@ export default angular.module('unidadeFederativaForm', [])
                         ctrl.error = error.data.message
                     })
             };
-
-            $rootScope.$on('editUnidadesFederativas', function (event, data) {
-                ctrl.state = data
-            })
         }],
     }).name;

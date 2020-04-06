@@ -17,10 +17,6 @@ export default angular.module('unidadeFederativaList', [])
                     });
             };
 
-            ctrl.edit = (payload) => {
-                $rootScope.$broadcast('editUnidadesFederativas', payload)
-            };
-
             $rootScope.$on('updateUnidadesFederativas', function () {
                 listarUnidadesFederativas();
             });
